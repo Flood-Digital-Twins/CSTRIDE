@@ -1,0 +1,62 @@
+{
+  "stations": [
+    {
+      "station": "05527800",
+      "source": "data/gauges/usgs_2013/raw_stage/0_05527800_height.csv",
+      "source_sha256": "963a9efe828a5018aecd98c64b3dfebebaf31a0d7c0b55a08dc3a0452411ee9a",
+      "datum_ft": 661.87,
+      "datum": "NAVD88",
+      "manual_addition_ft": 0.0,
+      "filled_hour_count": 0
+    },
+    {
+      "station": "05528000",
+      "source": "data/gauges/usgs_2013/raw_stage/19_05528000_height.csv",
+      "source_sha256": "289d237fa9675ce02320babf0935d9ae2df962d2af120f725714e77a8eeb4758",
+      "datum_ft": 650.07,
+      "datum": "NAVD88",
+      "manual_addition_ft": 0.0,
+      "filled_hour_count": 0
+    },
+    {
+      "station": "05529000",
+      "source": "data/gauges/usgs_2013/raw_stage/20_05529000_height.csv",
+      "source_sha256": "3812888613684faa9b159a7765a1c0511a621c3a9aa5e83a4b0290429f4fbb3b",
+      "datum_ft": 616.15,
+      "datum": "NAVD88",
+      "manual_addition_ft": 10.0,
+      "filled_hour_count": 0
+    },
+    {
+      "station": "05531500",
+      "source": "data/gauges/usgs_2013/raw_stage/7_05531500_height.csv",
+      "source_sha256": "dbf94a036951d6ca5c6700451ef16e05567544b58dd84f8c837f93ed03a3131f",
+      "datum_ft": 624.72,
+      "datum": "NAVD88",
+      "manual_addition_ft": 0.0,
+      "filled_hour_count": 0
+    },
+    {
+      "station": "05532500",
+      "source": "data/gauges/usgs_2013/raw_stage/25_05532500_height.csv",
+      "source_sha256": "d7f11717f9b58beeff20081946cfd4904fb0a228963a8ecb4db04562ec010e51",
+      "datum_ft": 594.38,
+      "datum": "NAVD88",
+      "manual_addition_ft": 0.0,
+      "filled_hour_count": 0
+    },
+    {
+      "station": "05540130",
+      "source": "data/gauges/usgs_2013/raw_stage/14_05540130_height.csv",
+      "source_sha256": "a3f7dfb1fb98991b750d47a645f4229469836910065696a87e52e28c32a98a79",
+      "datum_ft": 629.73,
+      "datum": "NAVD88",
+      "manual_addition_ft": 10.0,
+      "filled_hour_count": 0
+    }
+  ],
+  "timeline": "Hourly 2013-04-17 08:00 through 2013-04-21 07:00; source interval and one-frame burn-in support this alignment; timezone not recorded. See source_provenance.json.",
+  "offset": "Added to both simulator and predictions: mean(USGS WSE[12:96])-mean(simulated WSE[12:96]); predictions not separately centered",
+  "input_conversion": "max(USGS WSE-offset-ground elevation,0); full-window retrospective alignment",
+  "peak_timing": "first occurrence of maximum on common indices 12:96; prediction minus reference in assumed hours"
+}

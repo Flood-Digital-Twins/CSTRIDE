@@ -1,0 +1,82 @@
+{
+  "sensor_only": {
+    "metadata": {
+      "Split": "test",
+      "Observed time fraction": 1.0,
+      "Observed training steps": 96,
+      "Autoregressive horizon": 24,
+      "Evaluation seed": 0,
+      "Random valid starts per trajectory": 10,
+      "include_precipitation_input": false,
+      "Observation LSTM include_precipitation_input": false,
+      "Precipitation mismatch": 0.0,
+      "terrain_conditioning": true
+    },
+    "observation_error": {
+      "Forecast step 1 denormalized observation relative error": "mean=0.012681352102663367 (1.27%), std=0.013663936520911985",
+      "Forecast step 2 denormalized observation relative error": "mean=0.030876604025252163 (3.09%), std=0.03357780993853932",
+      "Forecast step 3 denormalized observation relative error": "mean=0.05143285053782165 (5.14%), std=0.049233719479364675",
+      "Forecast step 4 denormalized observation relative error": "mean=0.07425644258037209 (7.43%), std=0.06388038048045454",
+      "Forecast step 5 denormalized observation relative error": "mean=0.09579214132390916 (9.58%), std=0.07607486375990666",
+      "Forecast step 6 denormalized observation relative error": "mean=0.11569513427093625 (11.57%), std=0.08325923324210424",
+      "Forecast step 7 denormalized observation relative error": "mean=0.13640573928132654 (13.64%), std=0.09011229040791396",
+      "Forecast step 8 denormalized observation relative error": "mean=0.1559840338304639 (15.60%), std=0.09550274119381494",
+      "Forecast step 9 denormalized observation relative error": "mean=0.17509143464267254 (17.51%), std=0.09997032536741161",
+      "Forecast step 10 denormalized observation relative error": "mean=0.19474162310361862 (19.47%), std=0.10432909003408293",
+      "Forecast step 11 denormalized observation relative error": "mean=0.21459004301577805 (21.46%), std=0.10869145994594016",
+      "Forecast step 12 denormalized observation relative error": "mean=0.2347507944330573 (23.48%), std=0.11416947739919846",
+      "Forecast step 13 denormalized observation relative error": "mean=0.25395061932504176 (25.40%), std=0.12043398338295422",
+      "Forecast step 14 denormalized observation relative error": "mean=0.27246764302253723 (27.25%), std=0.12543250775387194",
+      "Forecast step 15 denormalized observation relative error": "mean=0.29011244550347326 (29.01%), std=0.12992858602782523",
+      "Forecast step 16 denormalized observation relative error": "mean=0.3078629827126861 (30.79%), std=0.1350516791919078",
+      "Forecast step 17 denormalized observation relative error": "mean=0.32485241182148455 (32.49%), std=0.14083524477151785",
+      "Forecast step 18 denormalized observation relative error": "mean=0.3406964672729373 (34.07%), std=0.14561192660607394",
+      "Forecast step 19 denormalized observation relative error": "mean=0.35606461148709057 (35.61%), std=0.14999403447921478",
+      "Forecast step 20 denormalized observation relative error": "mean=0.37062105294317005 (37.06%), std=0.15387499944435584",
+      "Forecast step 21 denormalized observation relative error": "mean=0.3850066538900137 (38.50%), std=0.15736224450446182",
+      "Forecast step 22 denormalized observation relative error": "mean=0.39914714395999906 (39.91%), std=0.16070132817271393",
+      "Forecast step 23 denormalized observation relative error": "mean=0.41296446733176706 (41.30%), std=0.16452938527103",
+      "Forecast step 24 denormalized observation relative error": "mean=0.42630728259682654 (42.63%), std=0.1692559094318577"
+    }
+  },
+  "rainfall": {
+    "metadata": {
+      "Split": "test",
+      "Observed time fraction": 1.0,
+      "Observed training steps": 96,
+      "Autoregressive horizon": 24,
+      "Evaluation seed": 0,
+      "Random valid starts per trajectory": 10,
+      "include_precipitation_input": true,
+      "Observation LSTM include_precipitation_input": true,
+      "Precipitation mismatch": 0.0,
+      "terrain_conditioning": true
+    },
+    "observation_error": {
+      "Forecast step 1 denormalized observation relative error": "mean=0.09297919413074851 (9.30%), std=0.07816245318541022",
+      "Forecast step 2 denormalized observation relative error": "mean=0.1004996341187507 (10.05%), std=0.08233388938364594",
+      "Forecast step 3 denormalized observation relative error": "mean=0.1087249972857535 (10.87%), std=0.08756020514810764",
+      "Forecast step 4 denormalized observation relative error": "mean=0.11510731908492744 (11.51%), std=0.09074299702470431",
+      "Forecast step 5 denormalized observation relative error": "mean=0.12004006849601864 (12.00%), std=0.09394254738035261",
+      "Forecast step 6 denormalized observation relative error": "mean=0.12279450730420649 (12.28%), std=0.09550054424265891",
+      "Forecast step 7 denormalized observation relative error": "mean=0.12832314358092844 (12.83%), std=0.09827260224785787",
+      "Forecast step 8 denormalized observation relative error": "mean=0.13278368255123496 (13.28%), std=0.10127542344099683",
+      "Forecast step 9 denormalized observation relative error": "mean=0.13424112806096672 (13.42%), std=0.10205817510944983",
+      "Forecast step 10 denormalized observation relative error": "mean=0.1363082595169544 (13.63%), std=0.10425989369189553",
+      "Forecast step 11 denormalized observation relative error": "mean=0.13960994579829275 (13.96%), std=0.10634122323835081",
+      "Forecast step 12 denormalized observation relative error": "mean=0.14385672151111067 (14.39%), std=0.1073633799406343",
+      "Forecast step 13 denormalized observation relative error": "mean=0.1449384767562151 (14.49%), std=0.10671181156613625",
+      "Forecast step 14 denormalized observation relative error": "mean=0.14509749016724527 (14.51%), std=0.10585400844437991",
+      "Forecast step 15 denormalized observation relative error": "mean=0.14637796632014216 (14.64%), std=0.10487900897620461",
+      "Forecast step 16 denormalized observation relative error": "mean=0.1500710361637175 (15.01%), std=0.10649671445022482",
+      "Forecast step 17 denormalized observation relative error": "mean=0.1524479436222464 (15.24%), std=0.10562456253825506",
+      "Forecast step 18 denormalized observation relative error": "mean=0.15161547772586345 (15.16%), std=0.10294574963063169",
+      "Forecast step 19 denormalized observation relative error": "mean=0.15251445230096577 (15.25%), std=0.10148268812071741",
+      "Forecast step 20 denormalized observation relative error": "mean=0.1543387004174292 (15.43%), std=0.10104630808990067",
+      "Forecast step 21 denormalized observation relative error": "mean=0.156775208003819 (15.68%), std=0.09936197626562415",
+      "Forecast step 22 denormalized observation relative error": "mean=0.1590849209576845 (15.91%), std=0.09690785132623794",
+      "Forecast step 23 denormalized observation relative error": "mean=0.16117822648957372 (16.12%), std=0.0954092550518513",
+      "Forecast step 24 denormalized observation relative error": "mean=0.16483808681368828 (16.48%), std=0.09620968637456268"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+basics:
+  dataset: Chicago
+  data_root: data/Chicago
+  num_sensors: 6
+  sensor_idx_path: data/gauges/USGS_6sensors.json
+  observables:
+  - 0
+  target_variables: depth
+  include_precipitation_input: false
+  terrain_conditioning: false
+  sensor_placement: QR
+  qr_num_snapshots: 1000
+  random_seed: 0
+  noise: 0
+  scaler: global
+  lag: 12
+  device: cuda
+model:
+  hidden_size: 256
+  hidden_layers: 2
+  fmmnn_depth: 8
+  fmmnn_width: 1024
+  fmmnn_rank: 128
+  num_fourier: 0
+forecast:
+  horizon: 1
+  lookback_steps: 0
+  discount_factor: 0.8
+  observed_time_fraction: 1.0
+training:
+  num_points: 100000
+  importance_sampling: false
+  epochs: 700
+  batch_size: 4
+  learning_rate: 0.002
+  gamma: 0.4
+  patience: 50
+  eval_interval: 10
+  improvement_threshold: 0.005
+  log_interval: 200
+  save_path: outputs/training/autoregressive
+  compile: false
+  num_workers: 8

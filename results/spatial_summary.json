@@ -1,0 +1,8 @@
+{
+  "snapshot_index": 33,
+  "selection": "maximum total reference depth on indices 12\u201395",
+  "mean_error_m": 0.004454880021512508,
+  "rmse_m": 0.06835481524467468,
+  "maximum_absolute_error_m": 1.4659075736999512,
+  "evaluation_cells": 993797
+}

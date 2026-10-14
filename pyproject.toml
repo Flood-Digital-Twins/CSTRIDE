@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cstride"
+version = "0.1.0"
+description = "Sparse-observation basin-wide flood prediction and forecasting"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.4", "numpy>=1.24", "PyYAML>=6", "matplotlib>=3.7", "pandas>=2"]
+
+[project.optional-dependencies]
+tracking = ["wandb>=0.17"]
+qr = ["pysensors"]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["code"]
+include = ["cstride*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["code"]

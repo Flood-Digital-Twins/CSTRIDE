@@ -1,0 +1,80 @@
+{
+  "full": {
+    "checkpoint": "best_model.ckpt",
+    "best_epoch": 180,
+    "epochs_completed": 180,
+    "configured_max_epochs": 700
+  },
+  "vanilla": {
+    "checkpoint": "best_model.ckpt",
+    "best_epoch": 180,
+    "epochs_completed": 180,
+    "configured_max_epochs": 700
+  },
+  "forcing": {
+    "checkpoint": "best_model.ckpt",
+    "best_epoch": 150,
+    "epochs_completed": 150,
+    "configured_max_epochs": 700
+  },
+  "terrain": {
+    "checkpoint": "best_model.ckpt",
+    "best_epoch": 180,
+    "epochs_completed": 210,
+    "configured_max_epochs": 700
+  },
+  "lag1": {
+    "checkpoint": "best_model.ckpt",
+    "best_epoch": 120,
+    "epochs_completed": 170,
+    "configured_max_epochs": 700
+  },
+  "lag4": {
+    "checkpoint": "best_model.ckpt",
+    "best_epoch": 220,
+    "epochs_completed": 220,
+    "configured_max_epochs": 700
+  },
+  "lag6": {
+    "checkpoint": "best_model.ckpt",
+    "best_epoch": 170,
+    "epochs_completed": 200,
+    "configured_max_epochs": 700
+  },
+  "lag24": {
+    "checkpoint": "best_model.ckpt",
+    "best_epoch": 180,
+    "epochs_completed": 180,
+    "configured_max_epochs": 700
+  },
+  "four_gauges": {
+    "checkpoint": "best_model.ckpt",
+    "best_epoch": 210,
+    "epochs_completed": 220,
+    "configured_max_epochs": 700
+  },
+  "dropout050": {
+    "checkpoint": "best_model.ckpt",
+    "best_epoch": 170,
+    "epochs_completed": 190,
+    "configured_max_epochs": 700
+  },
+  "noise005": {
+    "checkpoint": "best_model.ckpt",
+    "best_epoch": 170,
+    "epochs_completed": 180,
+    "configured_max_epochs": 700
+  },
+  "noise010": {
+    "checkpoint": "best_model.ckpt",
+    "best_epoch": 190,
+    "epochs_completed": 190,
+    "configured_max_epochs": 700
+  },
+  "noise020": {
+    "checkpoint": "best_model.ckpt",
+    "best_epoch": 120,
+    "epochs_completed": 170,
+    "configured_max_epochs": 700
+  }
+}

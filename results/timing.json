@@ -1,0 +1,9 @@
+{
+  "hardware": "NVIDIA L40S",
+  "training_hours": 26.2,
+  "next_step_full_field_seconds": 21.99,
+  "next_step_gauge_milliseconds_per_snapshot": 3.55,
+  "forecast_40_rollouts_24_steps_seconds": 247.37,
+  "value_origin": "Reported Section 4.6",
+  "qualification": "Next-step excludes scoring; forecast includes preparation and scoring."
+}

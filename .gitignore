@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+outputs/
+wandb/
+.env
+*.swp
+data/Chicago/
+data/prepared/
+paper/

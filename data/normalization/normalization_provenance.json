@@ -1,0 +1,5 @@
+{
+  "training_events": 90,
+  "test_events": 4,
+  "normalization": "Cached training-data min/max values"
+}

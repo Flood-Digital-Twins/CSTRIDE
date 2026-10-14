@@ -1,0 +1,229 @@
+{
+  "metadata": {
+    "Split": "test",
+    "Observed time fraction": 1.0,
+    "Observed training steps": 96,
+    "Autoregressive horizon": 24,
+    "Evaluation seed": 0,
+    "Random valid starts per trajectory": 10,
+    "Evaluation start steps for trajectory index 100": "[12, 14, 16, 22, 26, 29, 39, 45, 56, 61]",
+    "Evaluation start steps for trajectory index 101": "[12, 14, 26, 34, 44, 48, 56, 58, 60, 61]",
+    "Evaluation start steps for trajectory index 102": "[12, 13, 19, 33, 34, 37, 43, 51, 69, 72]",
+    "Evaluation start steps for trajectory index 113": "[20, 34, 47, 50, 52, 58, 62, 63, 65, 72]"
+  },
+  "means": {
+    "1": 0.02725582542722691,
+    "2": 0.05103029903246655,
+    "3": 0.07404177067380685,
+    "4": 0.09555699350493854,
+    "5": 0.11429905320767572,
+    "6": 0.13023629524852745,
+    "7": 0.14573082542824056,
+    "8": 0.1605911129843431,
+    "9": 0.17399690768609433,
+    "10": 0.18732909878337567,
+    "11": 0.20144366201770286,
+    "12": 0.21743494316939865,
+    "13": 0.2337902279252681,
+    "14": 0.24895533328202238,
+    "15": 0.2639689207167153,
+    "16": 0.2794909980630901,
+    "17": 0.29435126710896176,
+    "18": 0.3066627393443718,
+    "19": 0.31755788734080664,
+    "20": 0.32733866373455267,
+    "21": 0.33677282963260147,
+    "22": 0.346154604438341,
+    "23": 0.35480577115485834,
+    "24": 0.3636749458753776
+  },
+  "stds": {
+    "1": 0.038503195517242995,
+    "2": 0.06472989156844956,
+    "3": 0.08716334211046685,
+    "4": 0.10432694240721177,
+    "5": 0.11971468137145139,
+    "6": 0.12918626241003628,
+    "7": 0.13730709210214906,
+    "8": 0.14425569778780614,
+    "9": 0.14999256925813112,
+    "10": 0.1542088659392811,
+    "11": 0.15772645384685782,
+    "12": 0.16208945831899318,
+    "13": 0.16750145202045988,
+    "14": 0.17022920430034197,
+    "15": 0.17175547207795416,
+    "16": 0.1736908675779206,
+    "17": 0.1765412854854741,
+    "18": 0.17814410665064664,
+    "19": 0.17930047647034975,
+    "20": 0.1797889081529119,
+    "21": 0.17954386307563672,
+    "22": 0.17890287993150245,
+    "23": 0.17863410995161003,
+    "24": 0.17787717075530568
+  },
+  "origins": [
+    {
+      "trajectory_id": 107,
+      "first_target": 12
+    },
+    {
+      "trajectory_id": 107,
+      "first_target": 14
+    },
+    {
+      "trajectory_id": 107,
+      "first_target": 16
+    },
+    {
+      "trajectory_id": 107,
+      "first_target": 22
+    },
+    {
+      "trajectory_id": 107,
+      "first_target": 26
+    },
+    {
+      "trajectory_id": 107,
+      "first_target": 29
+    },
+    {
+      "trajectory_id": 107,
+      "first_target": 39
+    },
+    {
+      "trajectory_id": 107,
+      "first_target": 45
+    },
+    {
+      "trajectory_id": 107,
+      "first_target": 56
+    },
+    {
+      "trajectory_id": 107,
+      "first_target": 61
+    },
+    {
+      "trajectory_id": 108,
+      "first_target": 12
+    },
+    {
+      "trajectory_id": 108,
+      "first_target": 14
+    },
+    {
+      "trajectory_id": 108,
+      "first_target": 26
+    },
+    {
+      "trajectory_id": 108,
+      "first_target": 34
+    },
+    {
+      "trajectory_id": 108,
+      "first_target": 44
+    },
+    {
+      "trajectory_id": 108,
+      "first_target": 48
+    },
+    {
+      "trajectory_id": 108,
+      "first_target": 56
+    },
+    {
+      "trajectory_id": 108,
+      "first_target": 58
+    },
+    {
+      "trajectory_id": 108,
+      "first_target": 60
+    },
+    {
+      "trajectory_id": 108,
+      "first_target": 61
+    },
+    {
+      "trajectory_id": 109,
+      "first_target": 12
+    },
+    {
+      "trajectory_id": 109,
+      "first_target": 13
+    },
+    {
+      "trajectory_id": 109,
+      "first_target": 19
+    },
+    {
+      "trajectory_id": 109,
+      "first_target": 33
+    },
+    {
+      "trajectory_id": 109,
+      "first_target": 34
+    },
+    {
+      "trajectory_id": 109,
+      "first_target": 37
+    },
+    {
+      "trajectory_id": 109,
+      "first_target": 43
+    },
+    {
+      "trajectory_id": 109,
+      "first_target": 51
+    },
+    {
+      "trajectory_id": 109,
+      "first_target": 69
+    },
+    {
+      "trajectory_id": 109,
+      "first_target": 72
+    },
+    {
+      "trajectory_id": 120,
+      "first_target": 20
+    },
+    {
+      "trajectory_id": 120,
+      "first_target": 34
+    },
+    {
+      "trajectory_id": 120,
+      "first_target": 47
+    },
+    {
+      "trajectory_id": 120,
+      "first_target": 50
+    },
+    {
+      "trajectory_id": 120,
+      "first_target": 52
+    },
+    {
+      "trajectory_id": 120,
+      "first_target": 58
+    },
+    {
+      "trajectory_id": 120,
+      "first_target": 62
+    },
+    {
+      "trajectory_id": 120,
+      "first_target": 63
+    },
+    {
+      "trajectory_id": 120,
+      "first_target": 65
+    },
+    {
+      "trajectory_id": 120,
+      "first_target": 72
+    }
+  ],
+  "definition": "Persist true complete field at first_target-1; privileged full-state reference, not a sparse-gauge deployable baseline"
+}
