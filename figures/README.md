@@ -2,7 +2,7 @@
 
 | Figure | File |
 |---|---|
-| 1: Architecture | `fig01_architecture.pdf` |
+| 1: Architecture | `fig01_architecture.pdf`, `fig01_architecture.png` |
 | 2: Conditioning | `fig02_conditioning.png` |
 | 3: Diagnostic hydrographs | `fig03_diagnostics.png` |
 | 4: Spatial predictions | `fig04_spatial_prediction.png` |

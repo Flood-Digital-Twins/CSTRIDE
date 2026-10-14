@@ -49,8 +49,9 @@ def test_no_private_identifiers_or_tracking_accounts():
 
 def test_only_paper_figures_and_selected_results_are_bundled():
     figures = [p.name for p in (ROOT / 'figures').iterdir() if p.suffix in {'.png', '.pdf'}]
-    assert len(figures) == 10
-    assert sorted(int(name[3:5]) for name in figures) == list(range(1, 11))
+    assert len(figures) == 11
+    assert {int(name[3:5]) for name in figures} == set(range(1, 11))
+    assert {name for name in figures if name.startswith("fig01_")} == {"fig01_architecture.pdf", "fig01_architecture.png"}
     expected = {'README.md', 'reconstruction_summary.csv', 'history_common_support.csv',
                 'gauge_simulator_metrics.csv', 'usgs_metrics.csv', 'table10.csv', 'baseline_metrics.csv',
                 'forecasts.json', 'gauge_forecasts.json', 'persistence.json', 'precipitation_mismatch.json',

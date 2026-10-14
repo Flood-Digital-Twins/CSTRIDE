@@ -192,7 +192,9 @@ def check_paper_assets(root):
              "fig10_history_length.png")
     need(root, "paper: Figures 1–10", [os.path.join("figures", name) for name in names])
     actual = {os.path.basename(p) for ext in ("*.pdf", "*.png") for p in glob.glob(os.path.join(root, "figures", ext))}
-    report("PASS" if actual == set(names) else "FAIL", "paper: only published figures", ", ".join(sorted(actual - set(names))))
+    allowed = set(names) | {"fig01_architecture.png"}
+    need(root, "paper: architecture README preview", ["figures/fig01_architecture.png"])
+    report("PASS" if actual == allowed else "FAIL", "paper: only published figures and architecture preview", ", ".join(sorted(actual - allowed)))
     need(root, "paper: numeric tables and forecast data", ["results/" + name for name in
          ("reconstruction_summary.csv", "baseline_metrics.csv", "gauge_simulator_metrics.csv", "usgs_metrics.csv",
           "history_common_support.csv", "table10.csv", "forecasts.json", "gauge_forecasts.json", "persistence.json",

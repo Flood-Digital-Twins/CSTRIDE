@@ -10,15 +10,15 @@ Code, compact input data and trained models for:
 
 The full model uses **12 hourly observations at six gauges**. On the paper's four test events it achieves **10.63% mean snapshot-wise relative depth error**, compared with **18.14%** for the gauge-only Vanilla STRIDE model—about a **41% reduction**. For the April 2013 flood, it reconstructs the 84 target snapshots after the initial history at **993,797 evaluation cells in 21.99 seconds** on one NVIDIA L40S GPU. These are reported paper measurements; see [the results index](results/README.md) for metrics and timing scopes.
 
-![April 2013 flood-depth reconstruction and spatial error](figures/fig04_spatial_prediction.png)
+[![C-STRIDE architecture: gauge and rainfall histories encoded into a latent state, then decoded with coordinates and terrain into flood depth](figures/fig01_architecture.png)](figures/fig01_architecture.pdf)
 
-*April 2013 flood at peak total reference depth: SynxFlow depth, full C-STRIDE prediction and their difference (Figure 4). The model receives sparse simulated gauge histories and rainfall/terrain inputs. [Figure 1](figures/fig01_architecture.pdf) gives the architecture.*
+*C-STRIDE architecture (Figure 1). The encoder combines gauge observations and rainfall histories into a latent state. The decoder uses that state, query coordinates and terrain features to predict the next depth field. Click the diagram for the original PDF.*
 
-## April 2013: comparison with USGS gauges
+## Validation against USGS gauges (April 2013)
 
-![C-STRIDE gauge hydrographs with simulated and observed input histories](figures/fig06_observed_inputs.png)
+![April 2013 basin inundation and comparison of SynxFlow, C-STRIDE and USGS gauge hydrographs](figures/fig05_simulated_inputs.png)
 
-*Six gauge hydrographs compare SynxFlow, USGS observations and full C-STRIDE with either simulated or measured gauge histories supplied at inference (Figure 6). Water-surface elevations use the retrospective mean alignment described in the paper; the observation experiment is not a causal datum-calibration procedure.*
+*April 2013 flood (Figure 5). Left: reference inundation and six gauge locations. Right: water-surface elevations from SynxFlow (solid blue), full C-STRIDE (dashed blue) and hourly USGS observations (black). C-STRIDE receives simulated gauge histories in this comparison. Water-surface elevations are retrospectively mean-aligned as described in the paper. [Figure 6](figures/fig06_observed_inputs.png) separately shows the response to supplying measured gauge histories at inference.*
 
 ## Models and reported performance
 
@@ -165,7 +165,7 @@ Tests cover released weights, gauge forecasters, temporal alignment, normalizati
 
 The released models preserve **float16 coordinates** and the **as-trained Manning feature** for checkpoint compatibility. The Manning channel has the historical row-registration error also documented by CLDNet. Use the as-trained feature with released weights; use corrected registration for new training. [Array preparation](preprocessing/prepare_arrays/README.md) explains the corresponding options.
 
-The numbered rainfall fields were recorded outside the basin and applied as forcing; the 2013 event occurred on the basin. USGS inputs use retrospective mean alignment. Forecast results assume supplied future rainfall. Public LD-EnSF encoder weights are unavailable, so its reported comparison cannot currently be regenerated solely from public assets. Noise scores depend on the random seed, and timing comparisons must retain the scopes stated in the paper.
+The numbered rainfall fields were recorded outside the basin and applied as forcing; the 2013 event occurred on the basin. USGS inputs use retrospective mean alignment. Forecast results assume supplied future rainfall. Noise scores depend on the random seed, and timing comparisons must retain the scopes stated in the paper.
 
 ## License
 
