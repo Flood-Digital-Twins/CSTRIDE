@@ -1,29 +1,99 @@
 # C-STRIDE: basin-wide flood prediction from sparse gauge histories
 
-Code, trained models and compact inputs for Yanjie Tong, Phillip Si, Yuan Qiu, and Peng Chen (2026), *C-STRIDE: An Observation-Driven AI Digital Twin for Predicting Basin-Wide Flood Fields from Sparse Stream-Gauge Histories*. [Paper](https://arxiv.org/abs/2609.39005). Repository: [Flood-Digital-Twins/CSTRIDE](https://github.com/Flood-Digital-Twins/CSTRIDE).
+Code, compact input data and trained models for:
 
-C-STRIDE uses an LSTM to encode gauge histories and a modulated neural field to predict depth. Rainfall and terrain are optional conditioning inputs. Multi-step forecasting combines the fixed next-step model with a gauge-prediction LSTM. See [Figure 1](figures/fig01_architecture.pdf).
+> Yanjie Tong, Phillip Si, Yuan Qiu, and Peng Chen (2026). *C-STRIDE: An Observation-Driven AI Digital Twin for Predicting Basin-Wide Flood Fields from Sparse Stream-Gauge Histories.* [arXiv:2609.39005](https://arxiv.org/abs/2609.39005).
 
-The dataset contains **94 events: 90 training events and 4 test events**. Original test event IDs are 107, 108, 109 and 120. Compact gauge histories, query grids and cached normalizers allow inference without the full simulations. Rainfall is read from the public [CLDNet](https://github.com/Flood-Digital-Twins/CLDNet) dataset.
+[Paper](https://arxiv.org/abs/2609.39005) · [Models](checkpoints/README.md) · [Data](data/README.md) · [Paper results](results/README.md) · [Quick start](#quick-start)
 
-## Installation and prediction
+**From six stream gauges to a basin-wide flood-depth field.** C-STRIDE learns to reconstruct water depth across the Des Plaines River basin in greater Chicago from a short history of gauge observations. An LSTM encodes the histories into a shared latent state; a modulated neural-field decoder combines that state with query coordinates and optional terrain features. Rainfall provides additional temporal conditioning. For multi-step forecasts, a separate LSTM predicts the gauge trajectories, which the same field decoder turns into successive depth maps.
 
-Use Python 3.10 or later with a suitable PyTorch CPU/CUDA build. Commands run from the repository root; set explicit paths for external data.
+The full model uses **12 hourly observations at six gauges**. On the paper's four test events it achieves **10.63% mean snapshot-wise relative depth error**, compared with **18.14%** for the gauge-only Vanilla STRIDE model—about a **41% reduction**. For the April 2013 flood, it reconstructs the 84 target snapshots after the initial history at **993,797 evaluation cells in 21.99 seconds** on one NVIDIA L40S GPU. These are reported paper measurements; see [the results index](results/README.md) for metrics and timing scopes.
+
+![April 2013 flood-depth reconstruction and spatial error](figures/fig04_spatial_prediction.png)
+
+*April 2013 flood at peak total reference depth: SynxFlow depth, full C-STRIDE prediction and their difference (Figure 4). The model receives sparse simulated gauge histories and rainfall/terrain inputs. [Figure 1](figures/fig01_architecture.pdf) gives the architecture.*
+
+## April 2013: comparison with USGS gauges
+
+![C-STRIDE gauge hydrographs with simulated and observed input histories](figures/fig06_observed_inputs.png)
+
+*Six gauge hydrographs compare SynxFlow, USGS observations and full C-STRIDE with either simulated or measured gauge histories supplied at inference (Figure 6). Water-surface elevations use the retrospective mean alignment described in the paper; the observation experiment is not a causal datum-calibration procedure.*
+
+## Models and reported performance
+
+All four next-step variants receive gauge histories. Their additional inputs and Table 5 depth errors are:
+
+| Next-step model | Rainfall history | Terrain features | April 2013 error | Four-event mean error |
+|---|---|---|---:|---:|
+| C-STRIDE (full) | Yes | Yes | 8.38% | 10.63% |
+| C-STRIDE (terrain) | No | Yes | 9.49% | 14.23% |
+| C-STRIDE (forcing) | Yes | No | 13.59% | 15.73% |
+| Vanilla STRIDE | No | No | 13.69% | 18.14% |
+
+Errors are the mean snapshot-wise relative L2 errors over event-specific evaluation cells. The full model's four-event mean RMSE is **0.0631 m**. The thirteen released configurations also cover history lengths of 1, 4, 6 and 24 hours, four mainstem gauges, tributary dropout and three observation-noise levels. [Checkpoint details](checkpoints/README.md) list the best/final weights and training epochs.
+
+For 24-hour forecasting with supplied reference future rainfall, full C-STRIDE has **14.48% mean relative depth error at lead 24** across 40 forecast origins. That result uses the auxiliary gauge forecaster and is distinct from the next-step averages above. [Figures 1–10](figures/README.md) show conditioning, spatial reconstruction, gauge comparisons, rainfall sensitivity and history-length effects.
+
+## What is in this repository
+
+| Folder | Contents |
+|---|---|
+| `code/cstride/` | Model definitions, data loading, training, inference and gauge forecasting |
+| `configs/next_step/` | Thirteen paper model configurations |
+| `checkpoints/` | Best/final model weights, available gauge forecasters, safe sensor maps and integrity hashes |
+| `splits/chicago_split.json` | Original event IDs: 94 events, with 90 training and 4 test events |
+| `data/gauges/` | Six-gauge hourly histories, station/cell mappings and April 2013 USGS inputs |
+| `data/grids/` | Coordinates and as-trained static features for the four test events |
+| `data/normalization/` | Cached training normalization for inference without the training simulations |
+| `data/storms/` | Rainfall periods and recorded locations |
+| `preprocessing/` | SynxFlow array conversion and rainfall-origin tools |
+| `scripts/` | Prediction, evaluation, paper plotting and timing commands |
+| `results/` | Selected numeric data and reported values used in the paper |
+| `figures/` | The ten paper figures |
+
+**Full simulated flow fields are not bundled.** Released compact inputs suffice for prediction on test events **107, 108, 109 and 120**; event 120 is the April 2013 flood. Rainfall is read directly from the public [CLDNet](https://github.com/Flood-Digital-Twins/CLDNet) dataset. Training and full-field scoring additionally require prepared reference simulations. Data formats and preprocessing conventions are specified in [data/README.md](data/README.md).
+
+## Quick start
+
+Python ≥ 3.10 with a suitable PyTorch CPU/CUDA build. CUDA is recommended for basin-wide inference; the CPU path is supported. Clone C-STRIDE and CLDNet into sibling directories:
 
 ```bash
+git clone https://github.com/Flood-Digital-Twins/CSTRIDE.git
+git clone https://github.com/Flood-Digital-Twins/CLDNet.git
+cd CSTRIDE
 python -m pip install -r requirements.txt
+```
+
+**Predict the April 2013 depth field from released gauge histories:**
+
+```bash
 python scripts/predict_cstride.py --model full --storm 120 --cldnet-root ../CLDNet --device cuda:0
+```
+
+**Supply the released USGS observation inputs instead:**
+
+```bash
 python scripts/predict_cstride.py --model full --storm 120 --cldnet-root ../CLDNet --observations usgs --device cuda:0
+```
+
+**Produce a 24-hour forecast using the rainfall-aware gauge predictor:**
+
+```bash
 python scripts/predict_cstride.py --model full --storm 120 --cldnet-root ../CLDNet --forecast --obs-rainfall --start 12 --steps 24 --device cuda:0
-# CPU inference without rainfall:
+```
+
+Prediction writes a peak-depth `.npz` and metadata under `outputs/predictions/`. Add `--save-fields` for per-step float32 depth arrays; `--chunk-size` bounds decoder memory. Next-step target `t` uses observations from `t-lag` through `t-1`. Forecasting inserts predicted gauges and supplied future rainfall into subsequent histories.
+
+Vanilla and terrain-only next-step models do not require rainfall. For a small CPU example:
+
+```bash
 python scripts/predict_cstride.py --model vanilla --storm 120 --steps 1 --device cpu
 ```
 
-The next-step prediction for time `t` uses observations from `t-lag` through `t-1`. Forecasting inserts predicted gauges and supplied future rainfall into subsequent histories. USGS inputs are available for event 120. Vanilla and terrain-only next-step models do not require rainfall.
+Tracking is disabled by default and requires no account. The compact launcher uses supplied histories without injecting robustness perturbations; use the prepared-data scorer below for noise/dropout experiments. Python imports use `cstride`; the model classes are `CSTRIDE` and `CSTRIDEForecast`.
 
-Outputs go under `outputs/`; `--save-fields` adds per-step fields and `--chunk-size` bounds decoding memory. The compact launcher uses the supplied histories without adding robustness noise/dropout. Tracking is disabled by default and requires no account. Python imports use `cstride`; the model classes are `CSTRIDE` and `CSTRIDEForecast`.
-
-## Data and preprocessing
+## Preparing simulation data
 
 [Data formats](data/README.md) describe the compact gauge histories, safe sensor maps, query grids, USGS alignment and cached normalization. Full simulations are supplied separately when training or scoring. Prepare collected SynxFlow output as follows:
 
@@ -80,7 +150,7 @@ python scripts/score_cldnet_baselines.py --prediction_dir outputs/cldnet_predict
 
 Use the actual CLDNet output filename and repeat conversion for all four test events. Zero-filled cells outside CLDNet's aggregate mask are not model predictions; the event-120 grid differs by two cells, so converted predictions need not reproduce the reported baseline exactly. Bundled baseline values are transcribed from Tables 5 and 8; the CLDNet comparison uses its epoch-539 checkpoint.
 
-## Verification
+## Tests and integrity checks
 
 ```bash
 python -m pip install -e '.[dev]'
@@ -91,8 +161,25 @@ sha256sum -c data/SHA256SUMS
 
 Tests cover released weights, gauge forecasters, temporal alignment, normalization, decoder chunking, event-ID loading, publication assets and synthetic training/evaluation. Full training convergence, multi-GPU training and compilation are outside this verification. Checkpoint and compact-input hashes are recorded in their manifests.
 
-## Input conventions and licensing
+## Input conventions and limitations
 
-Historical float16 coordinates and the as-trained Manning feature are preserved for checkpoint compatibility. Corrected Manning registration should be used for new training. Numbered rainfall events were recorded elsewhere and applied to the basin; the 2013 event occurred on the basin. USGS inputs retain retrospective mean alignment. Public LD-EnSF encoder weights are unavailable, so its reported baseline cannot currently be regenerated solely from public assets.
+The released models preserve **float16 coordinates** and the **as-trained Manning feature** for checkpoint compatibility. The Manning channel has the historical row-registration error also documented by CLDNet. Use the as-trained feature with released weights; use corrected registration for new training. [Array preparation](preprocessing/prepare_arrays/README.md) explains the corresponding options.
 
-Original code and model weights use [MIT](LICENSE); released data use [CC BY 4.0](data/LICENSE.md). Third-party notices are retained in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+The numbered rainfall fields were recorded outside the basin and applied as forcing; the 2013 event occurred on the basin. USGS inputs use retrospective mean alignment. Forecast results assume supplied future rainfall. Public LD-EnSF encoder weights are unavailable, so its reported comparison cannot currently be regenerated solely from public assets. Noise scores depend on the random seed, and timing comparisons must retain the scopes stated in the paper.
+
+## License
+
+Original code and trained models: [MIT](LICENSE). Released input data: [CC BY 4.0](data/LICENSE.md). Third-party component notices and licenses are retained in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+## Citation
+
+```bibtex
+@misc{tong2026cstride,
+  title         = {{C-STRIDE}: An Observation-Driven {AI} Digital Twin for Predicting Basin-Wide Flood Fields from Sparse Stream-Gauge Histories},
+  author        = {Tong, Yanjie and Si, Phillip and Qiu, Yuan and Chen, Peng},
+  year          = {2026},
+  eprint        = {2609.39005},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2609.39005}
+}
+```
