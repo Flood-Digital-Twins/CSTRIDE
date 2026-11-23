@@ -1,0 +1,38 @@
+{
+ "107": {
+  "event_cells": 909688,
+  "event_cells_outside_fixed_grid": 0,
+  "coords_equal": true,
+  "elevation_maxdiff": 0.0,
+  "manning_maxdiff": 0.0,
+  "slope_maxdiff": 0.0,
+  "prepared_elevation_equal": true
+ },
+ "108": {
+  "event_cells": 809551,
+  "event_cells_outside_fixed_grid": 0,
+  "coords_equal": true,
+  "elevation_maxdiff": 0.0,
+  "manning_maxdiff": 0.0,
+  "slope_maxdiff": 0.0,
+  "prepared_elevation_equal": true
+ },
+ "109": {
+  "event_cells": 823233,
+  "event_cells_outside_fixed_grid": 0,
+  "coords_equal": true,
+  "elevation_maxdiff": 0.0,
+  "manning_maxdiff": 0.0,
+  "slope_maxdiff": 0.0,
+  "prepared_elevation_equal": true
+ },
+ "120": {
+  "event_cells": 993797,
+  "event_cells_outside_fixed_grid": 2,
+  "coords_equal": true,
+  "elevation_maxdiff": 0.0,
+  "manning_maxdiff": 0.0,
+  "slope_maxdiff": 0.0,
+  "prepared_elevation_equal": true
+ }
+}

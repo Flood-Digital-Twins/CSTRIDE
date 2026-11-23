@@ -150,6 +150,14 @@ python scripts/score_cldnet_baselines.py --prediction_dir outputs/cldnet_predict
 
 Use the actual CLDNet output filename and repeat conversion for all four test events. Zero-filled cells outside CLDNet's aggregate mask are not model predictions; the event-120 grid differs by two cells, so converted predictions need not reproduce the reported baseline exactly. Bundled baseline values are transcribed from Tables 5 and 8; the CLDNet comparison uses its epoch-539 checkpoint.
 
+## Revision (Journal of Hydrology, November 2026)
+
+[revision/](revision/README.md) holds the scripts, tables, figures and retrained models behind the revised results: the USGS comparison on the corrected clock and at the CLDNet cross-sections, the fixed-grid evaluation of Tables 5 and 8, the independent-gauge check, and the retrained models E5 (corrected Manning) and E8 (fixed grid, clean split). The released files outside that folder are unchanged, so the submission numbers still reproduce. Points documented there:
+
+- The USGS stage files are in CST (UTC-6). Simulation frame *i* (2013-04-17 08:00 UTC + *i* h) pairs with CSV time 02:00 + *i*; the submission paired it with 08:00 + *i*. `data/gauges/usgs_2013/usgs_observations.npz` keeps the submission pairing; the CST series is `revision/results/e1e2/usgs_observations_CST_full.npz`.
+- The released models chose `best_model.ckpt` and stopped early on `checkpoint_monitor_files` (storms 107-116), which include the test storms 107, 108 and 109.
+- `train_files` lists 100 storms; 85-89 and 95-99 repeat the rainfall of 25-29 and 35-39, so the released models saw 90 distinct storms. E8 trains on the 90 distinct storms and selects no checkpoint on test storms.
+
 ## Tests and integrity checks
 
 ```bash

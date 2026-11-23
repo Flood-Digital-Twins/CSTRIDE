@@ -1,0 +1,25 @@
+model,station,name,role,offset_m,SynxFlow_nse,SynxFlow_kge,SynxFlow_peak_timing_hours,sim_input_nse,sim_input_kge,sim_input_peak_timing_hours,usgs_input_nse,usgs_input_kge,usgs_input_peak_timing_hours
+full,05527800,Russell,input,-0.319,0.883,0.756,6,0.78,0.656,7,0.731,0.838,3
+full,05528000,Gurnee,input,-0.623,0.893,0.939,-25,0.944,0.961,2,0.932,0.927,2
+full,05529000,Des Plaines,input,-0.824,0.889,0.803,-10,0.88,0.768,-11,0.97,0.904,0
+full,05531500,Salt Creek,input,-0.761,0.163,0.596,4,0.162,0.627,6,0.603,0.84,4
+full,05532500,Riverside,input,-0.185,0.182,0.483,1,0.118,0.452,0,0.84,0.681,0
+full,05540130,DuPage,input,1.064,0.712,0.809,-1,0.588,0.798,-1,0.567,0.799,-11
+terrain,05527800,Russell,input,-0.319,,,,0.808,0.665,7,0.844,0.921,10
+terrain,05528000,Gurnee,input,-0.623,,,,0.868,0.951,6,0.892,0.84,1
+terrain,05529000,Des Plaines,input,-0.824,,,,0.885,0.799,-9,0.978,0.892,5
+terrain,05531500,Salt Creek,input,-0.761,,,,0.15,0.557,5,0.626,0.77,4
+terrain,05532500,Riverside,input,-0.185,,,,0.061,0.407,1,0.92,0.865,6
+terrain,05540130,DuPage,input,1.064,,,,0.67,0.776,1,0.696,0.71,2
+vanilla,05527800,Russell,input,-0.319,,,,0.749,0.576,7,0.801,0.629,10
+vanilla,05528000,Gurnee,input,-0.623,,,,0.875,0.868,3,0.567,0.5,18
+vanilla,05529000,Des Plaines,input,-0.824,,,,0.889,0.782,-7,0.911,0.746,5
+vanilla,05531500,Salt Creek,input,-0.761,,,,-0.011,0.474,14,0.667,0.724,5
+vanilla,05532500,Riverside,input,-0.185,,,,0.057,0.485,11,0.94,0.909,8
+vanilla,05540130,DuPage,input,1.064,,,,0.689,0.846,4,0.759,0.832,3
+four_gauges,05527800,Russell,input,-0.319,,,,0.839,0.712,7,0.91,0.933,3
+four_gauges,05528000,Gurnee,input,-0.623,,,,0.886,0.87,-20,0.881,0.839,1
+four_gauges,05529000,Des Plaines,input,-0.824,,,,0.872,0.778,-11,0.955,0.913,6
+four_gauges,05531500,Salt Creek,held_out,-0.761,,,,0.004,0.555,7,0.346,0.639,7
+four_gauges,05532500,Riverside,input,-0.185,,,,0.072,0.423,4,0.72,0.596,0
+four_gauges,05540130,DuPage,held_out,1.064,,,,0.388,0.685,1,0.387,0.744,-7

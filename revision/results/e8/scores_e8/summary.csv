@@ -1,0 +1,5 @@
+model,fixed_rel_l2_107_pct,fixed_rel_l2_108_pct,fixed_rel_l2_109_pct,fixed_rel_l2_120_pct,fixed_four_event_rel_l2_pct,fixed_four_event_rmse_m,fixed_april_rel_l2_pct,fixed_april_rmse_m,april_csi,april_precision,april_recall,april_bias,event_mask_four_event_rel_l2_pct,event_mask_four_event_rmse_m,fp_outside_event_mask_four_events,fp_outside_event_mask_april,t7_mean_nse_sim,t7_mean_nse_usgs,t7_usgs_improves,t7_n,e6_mean_nse_sim,e6_mean_nse_usgs,e6_usgs_wins,e6_n
+E8 full,12.4601,14.1257,12.5572,8.9299,12.0182,0.0562,8.9299,0.0530,0.9311,0.9612,0.9675,1.0066,11.6604,0.0695,31381,468,0.8084,0.9073,5,6,0.5919,0.5129,4,19
+E8 terrain,12.4807,17.5705,10.1774,10.3616,12.6476,0.0570,10.3616,0.0611,0.9160,0.9585,0.9538,0.9951,12.2273,0.0701,50798,824,0.7813,0.9022,5,6,0.5856,0.4591,3,19
+E8 vanilla,18.7408,25.0176,17.4566,15.4111,19.1565,0.0830,15.4111,0.0911,0.8730,0.9384,0.9261,0.9869,17.8556,0.0981,221373,48721,0.7695,0.8026,4,6,0.6401,0.5475,5,19
+E8 forcing,18.1781,20.4576,18.0026,14.1154,17.6884,0.0770,14.1154,0.0832,0.8880,0.9458,0.9356,0.9893,16.5439,0.0913,168187,41683,0.7931,0.8839,5,6,0.6097,0.5944,4,19

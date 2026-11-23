@@ -1,0 +1,90 @@
+{
+ "05527800_synxflow_recomputed_maxdiff_m": 0.0,
+ "05527800_cells": [
+  [
+   781,
+   782
+  ],
+  [
+   781,
+   783
+  ],
+  [
+   782,
+   781
+  ]
+ ],
+ "05527800_prepared_vs_dem_elevation_maxdiff_m": 0.0,
+ "05528000_synxflow_recomputed_maxdiff_m": 0.0,
+ "05528000_cells": [
+  [
+   1321,
+   794
+  ],
+  [
+   1322,
+   794
+  ],
+  [
+   1323,
+   794
+  ]
+ ],
+ "05528000_prepared_vs_dem_elevation_maxdiff_m": 0.0,
+ "05529000_synxflow_recomputed_maxdiff_m": 0.0,
+ "05529000_cells": [
+  [
+   2287,
+   1007
+  ],
+  [
+   2287,
+   1008
+  ],
+  [
+   2287,
+   1009
+  ]
+ ],
+ "05529000_prepared_vs_dem_elevation_maxdiff_m": 0.0,
+ "05531500_synxflow_recomputed_maxdiff_m": 0.0,
+ "05531500_cells": [
+  [
+   3239,
+   1061
+  ],
+  [
+   3240,
+   1061
+  ]
+ ],
+ "05531500_prepared_vs_dem_elevation_maxdiff_m": 0.0,
+ "05532500_synxflow_recomputed_maxdiff_m": 0.0,
+ "05532500_cells": [
+  [
+   3235,
+   1280
+  ],
+  [
+   3235,
+   1281
+  ],
+  [
+   3236,
+   1281
+  ]
+ ],
+ "05532500_prepared_vs_dem_elevation_maxdiff_m": 0.0,
+ "05540130_synxflow_recomputed_maxdiff_m": 0.0,
+ "05540130_cells": [
+  [
+   3685,
+   460
+  ],
+  [
+   3685,
+   461
+  ]
+ ],
+ "05540130_prepared_vs_dem_elevation_maxdiff_m": 0.0
+}

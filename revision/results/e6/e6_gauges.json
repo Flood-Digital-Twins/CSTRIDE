@@ -1,0 +1,646 @@
+[
+ {
+  "gage_index": 1,
+  "site_no": "05527900",
+  "station_nm": "North Mill Creek At Hickory Corners, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 3.528551560726267,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    889,
+    563
+   ],
+   [
+    889,
+    564
+   ]
+  ],
+  "nearest_cell": [
+   889,
+   563
+  ],
+  "xs_dem_m": 227.93246459960938,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 0.448974609375,
+  "nearest_dem_m": 228.14141845703125,
+  "nearest_dry_before_frame12": true,
+  "nearest_max_depth_m": 0.110595703125
+ },
+ {
+  "gage_index": 2,
+  "site_no": "05527905",
+  "station_nm": "Hastings Creek Near Lindenhurst, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 5.062108740175047,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    958,
+    526
+   ],
+   [
+    958,
+    527
+   ]
+  ],
+  "nearest_cell": [
+   958,
+   527
+  ],
+  "xs_dem_m": 231.18182373046875,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 0.275634765625,
+  "nearest_dem_m": 231.13291931152344,
+  "nearest_dry_before_frame12": false,
+  "nearest_max_depth_m": 0.268798828125
+ },
+ {
+  "gage_index": 3,
+  "site_no": "05527950",
+  "station_nm": "Mill Creek At Old Mill Creek, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 1.622778845254823,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    1067,
+    687
+   ],
+   [
+    1067,
+    688
+   ]
+  ],
+  "nearest_cell": [
+   1067,
+   688
+  ],
+  "xs_dem_m": 207.5229949951172,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 0.927734375,
+  "nearest_dem_m": 207.73768615722656,
+  "nearest_dry_before_frame12": true,
+  "nearest_max_depth_m": 0.396728515625
+ },
+ {
+  "gage_index": 4,
+  "site_no": "05528500",
+  "station_nm": "Buffalo Creek Near Wheeling, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 34.41902516377397,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    2044,
+    802
+   ],
+   [
+    2044,
+    803
+   ]
+  ],
+  "nearest_cell": [
+   2043,
+   803
+  ],
+  "xs_dem_m": 202.17822265625,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 1.3974609375,
+  "nearest_dem_m": 202.7189483642578,
+  "nearest_dry_before_frame12": true,
+  "nearest_max_depth_m": 0.80908203125
+ },
+ {
+  "gage_index": 5,
+  "site_no": "05529500",
+  "station_nm": "Mc Donald Creek Near Mount Prospect, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 21.93090291322494,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    2242,
+    942
+   ],
+   [
+    2243,
+    941
+   ]
+  ],
+  "nearest_cell": [
+   2243,
+   942
+  ],
+  "xs_dem_m": 196.70217895507812,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 0.322021484375,
+  "nearest_dem_m": 196.71426391601562,
+  "nearest_dry_before_frame12": true,
+  "nearest_max_depth_m": 0.23291015625
+ },
+ {
+  "gage_index": 6,
+  "site_no": "05531000",
+  "station_nm": "",
+  "coverage": 0.0,
+  "excluded": "no data"
+ },
+ {
+  "gage_index": 8,
+  "site_no": "05536995",
+  "station_nm": "Chicago Sanitary And Ship Canal At Romeoville, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 17.640425718814335,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    3965,
+    681
+   ],
+   [
+    3965,
+    682
+   ]
+  ],
+  "nearest_cell": [
+   3965,
+   683
+  ],
+  "xs_dem_m": 175.89479064941406,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 2.53125,
+  "nearest_dem_m": 179.33587646484375,
+  "nearest_dry_before_frame12": true,
+  "nearest_max_depth_m": 0.0
+ },
+ {
+  "gage_index": 9,
+  "site_no": "05537980",
+  "station_nm": "Des Plaines River At Route 53 At Joliet, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 31.718600787357754,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    4359,
+    651
+   ],
+   [
+    4359,
+    652
+   ]
+  ],
+  "nearest_cell": [
+   4359,
+   653
+  ],
+  "xs_dem_m": 163.97897338867188,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 1.5576171875,
+  "nearest_dem_m": 163.9886932373047,
+  "nearest_dry_before_frame12": false,
+  "nearest_max_depth_m": 1.5634765625
+ },
+ {
+  "gage_index": 10,
+  "site_no": "05539900",
+  "station_nm": "West Branch Du Page River Near West Chicago, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 18.76993709235378,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    2989,
+    271
+   ],
+   [
+    2989,
+    272
+   ]
+  ],
+  "nearest_cell": [
+   2989,
+   273
+  ],
+  "xs_dem_m": 221.11447143554688,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 1.298828125,
+  "nearest_dem_m": 221.22872924804688,
+  "nearest_dry_before_frame12": true,
+  "nearest_max_depth_m": 0.8896484375
+ },
+ {
+  "gage_index": 11,
+  "site_no": "05540060",
+  "station_nm": "Kress Creek At West Chicago, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 7.16479660214133,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    3196,
+    221
+   ],
+   [
+    3197,
+    221
+   ]
+  ],
+  "nearest_cell": [
+   3197,
+   221
+  ],
+  "xs_dem_m": 216.55755615234375,
+  "xs_dry_before_frame12": true,
+  "xs_max_depth_m": 0.485107421875,
+  "nearest_dem_m": 216.50274658203125,
+  "nearest_dry_before_frame12": true,
+  "nearest_max_depth_m": 0.43994140625
+ },
+ {
+  "gage_index": 12,
+  "site_no": "05540091",
+  "station_nm": "",
+  "coverage": 0.0,
+  "excluded": "no data"
+ },
+ {
+  "gage_index": 13,
+  "site_no": "05540095",
+  "station_nm": "West Branch Du Page River Near Warrenville, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 49.98557953834275,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    3314,
+    317
+   ],
+   [
+    3315,
+    316
+   ]
+  ],
+  "nearest_cell": [
+   3316,
+   315
+  ],
+  "xs_dem_m": 210.5575714111328,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 3.041015625,
+  "nearest_dem_m": 210.57017517089844,
+  "nearest_dry_before_frame12": false,
+  "nearest_max_depth_m": 2.59765625
+ },
+ {
+  "gage_index": 15,
+  "site_no": "05540160",
+  "station_nm": "East Branch Du Page River Near Downers Grove, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 2.619614412337813,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    3253,
+    655
+   ],
+   [
+    3253,
+    656
+   ]
+  ],
+  "nearest_cell": [
+   3253,
+   656
+  ],
+  "xs_dem_m": 205.83837890625,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 1.8515625,
+  "nearest_dem_m": 205.5054931640625,
+  "nearest_dry_before_frame12": false,
+  "nearest_max_depth_m": 1.8515625
+ },
+ {
+  "gage_index": 16,
+  "site_no": "05540195",
+  "station_nm": "St. Joseph Creek At Route 34 At Lisle, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 11.689307933943349,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    3368,
+    608
+   ],
+   [
+    3369,
+    606
+   ]
+  ],
+  "nearest_cell": [
+   3369,
+   608
+  ],
+  "xs_dem_m": 205.87477111816406,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 0.6728515625,
+  "nearest_dem_m": 205.5037384033203,
+  "nearest_dry_before_frame12": false,
+  "nearest_max_depth_m": 0.94482421875
+ },
+ {
+  "gage_index": 17,
+  "site_no": "05540250",
+  "station_nm": "East Branch Du Page River At Bolingbrook, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 3.2994717876896362,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    3680,
+    628
+   ],
+   [
+    3681,
+    628
+   ]
+  ],
+  "nearest_cell": [
+   3681,
+   629
+  ],
+  "xs_dem_m": 197.31414794921875,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 2.87890625,
+  "nearest_dem_m": 196.5206298828125,
+  "nearest_dry_before_frame12": false,
+  "nearest_max_depth_m": 2.896484375
+ },
+ {
+  "gage_index": 18,
+  "site_no": "05527910",
+  "station_nm": "North Mill Creek Near Milburn, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 11.598344424553698,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    967,
+    592
+   ],
+   [
+    967,
+    593
+   ]
+  ],
+  "nearest_cell": [
+   967,
+   594
+  ],
+  "xs_dem_m": 220.09304809570312,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 0.63232421875,
+  "nearest_dem_m": 220.66958618164062,
+  "nearest_dry_before_frame12": true,
+  "nearest_max_depth_m": 0.07940673828125
+ },
+ {
+  "gage_index": 21,
+  "site_no": "05530000",
+  "station_nm": "Weller Creek At Des Plaines, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 2589.0892223418,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    2387,
+    1024
+   ],
+   [
+    2387,
+    1025
+   ]
+  ],
+  "nearest_cell": [
+   2414,
+   942
+  ],
+  "xs_dem_m": 193.75021362304688,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 1.6005859375,
+  "nearest_dem_m": 197.36651611328125,
+  "nearest_dry_before_frame12": false,
+  "nearest_max_depth_m": 0.8759765625
+ },
+ {
+  "gage_index": 22,
+  "site_no": "05530990",
+  "station_nm": "Salt Creek At Rolling Meadows, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 2.897634191193663,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    2396,
+    670
+   ],
+   [
+    2396,
+    671
+   ]
+  ],
+  "nearest_cell": [
+   2397,
+   670
+  ],
+  "xs_dem_m": 212.92776489257812,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 1.0927734375,
+  "nearest_dem_m": 212.8387451171875,
+  "nearest_dry_before_frame12": false,
+  "nearest_max_depth_m": 0.8330078125
+ },
+ {
+  "gage_index": 23,
+  "site_no": "05531300",
+  "station_nm": "Salt Creek At Elmhurst, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 21.04977840019601,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    3030,
+    881
+   ],
+   [
+    3030,
+    882
+   ]
+  ],
+  "nearest_cell": [
+   3030,
+   882
+  ],
+  "xs_dem_m": 203.1656494140625,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 1.583984375,
+  "nearest_dem_m": 203.8491668701172,
+  "nearest_dry_before_frame12": true,
+  "nearest_max_depth_m": 0.2763671875
+ },
+ {
+  "gage_index": 24,
+  "site_no": "05532000",
+  "station_nm": "Addison Creek At Bellwood, IL",
+  "coverage": 0.7604166666666666,
+  "excluded": "coverage 0.76"
+ },
+ {
+  "gage_index": 26,
+  "site_no": "05533000",
+  "station_nm": "Flag Creek Near Willow Springs, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 3.773408463191558,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    3563,
+    1099
+   ],
+   [
+    3563,
+    1100
+   ]
+  ],
+  "nearest_cell": [
+   3563,
+   1100
+  ],
+  "xs_dem_m": 188.0392608642578,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 1.826171875,
+  "nearest_dem_m": 188.44528198242188,
+  "nearest_dry_before_frame12": true,
+  "nearest_max_depth_m": 1.1015625
+ },
+ {
+  "gage_index": 27,
+  "site_no": "05533400",
+  "station_nm": "Sawmill Creek Near Lemont, IL",
+  "coverage": 0.7604166666666666,
+  "excluded": "coverage 0.76"
+ },
+ {
+  "gage_index": 28,
+  "site_no": "05537500",
+  "station_nm": "Long Run Near Lemont, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 19.797280554181707,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    3944,
+    848
+   ],
+   [
+    3945,
+    848
+   ]
+  ],
+  "nearest_cell": [
+   3945,
+   849
+  ],
+  "xs_dem_m": 196.66925048828125,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 1.5986328125,
+  "nearest_dem_m": 196.35092163085938,
+  "nearest_dry_before_frame12": false,
+  "nearest_max_depth_m": 1.619140625
+ },
+ {
+  "gage_index": 29,
+  "site_no": "05539000",
+  "station_nm": "Hickory Creek At Joliet, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 45.233841083411015,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    4437,
+    685
+   ],
+   [
+    4438,
+    685
+   ]
+  ],
+  "nearest_cell": [
+   4436,
+   684
+  ],
+  "xs_dem_m": 162.67691040039062,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 2.931640625,
+  "nearest_dem_m": 163.69886779785156,
+  "nearest_dry_before_frame12": true,
+  "nearest_max_depth_m": 0.96240234375
+ },
+ {
+  "gage_index": 30,
+  "site_no": "05540275",
+  "station_nm": "Spring Brook At 87Th Street Near Naperville, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 17.897831975776054,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    3672,
+    372
+   ],
+   [
+    3672,
+    373
+   ]
+  ],
+  "nearest_cell": [
+   3673,
+   371
+  ],
+  "xs_dem_m": 199.32479858398438,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 1.091796875,
+  "nearest_dem_m": 199.78353881835938,
+  "nearest_dry_before_frame12": true,
+  "nearest_max_depth_m": 0.5966796875
+ },
+ {
+  "gage_index": 31,
+  "site_no": "05540500",
+  "station_nm": "Du Page River At Shorewood, IL",
+  "coverage": 1.0,
+  "distance_to_flowline_m": 35.427468654975534,
+  "flowline_name": "None",
+  "xs_cells": [
+   [
+    4435,
+    353
+   ],
+   [
+    4436,
+    353
+   ]
+  ],
+  "nearest_cell": [
+   4437,
+   354
+  ],
+  "xs_dem_m": 172.86839294433594,
+  "xs_dry_before_frame12": false,
+  "xs_max_depth_m": 4.22265625,
+  "nearest_dem_m": 177.02532958984375,
+  "nearest_dry_before_frame12": true,
+  "nearest_max_depth_m": 0.087646484375
+ }
+]

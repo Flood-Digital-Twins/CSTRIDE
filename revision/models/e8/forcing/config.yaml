@@ -1,0 +1,39 @@
+basics:
+  data_root: revision/results/e8/data/Chicago
+  dataset: Chicago
+  device: cuda:0
+  include_precipitation_input: true
+  lag: 12
+  noise: 0
+  num_sensors: 6
+  observables:
+  - 0
+  qr_num_snapshots: 1000
+  random_seed: 0
+  scaler: global
+  sensor_idx_path: revision/results/e8/sensor_indices_fixed.json
+  sensor_placement: QR
+  target_variables: depth
+  terrain_conditioning: false
+  split_file: revision/results/e8/split_e8.json
+model:
+  fmmnn_depth: 8
+  fmmnn_rank: 128
+  fmmnn_width: 1024
+  hidden_layers: 2
+  hidden_size: 256
+  num_fourier: 0
+training:
+  batch_size: 4
+  epochs: 150
+  gamma: 0.4
+  init_checkpoint: null
+  jerk_regularization: 0
+  learning_rate: 0.002
+  log_interval: 200
+  num_points: 100000
+  patience: null
+  save_path: outputs/training/e8_forcing
+  second_order_regularization: 0
+  compile: false
+  num_workers: 8

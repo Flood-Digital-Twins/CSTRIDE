@@ -1,0 +1,120 @@
+{
+ "0": {
+  "site_no": "05527800",
+  "width_m": 90,
+  "distance_to_flowline_m": 34.279376288134316,
+  "comid": "14784427",
+  "cells": [
+   [
+    781,
+    782
+   ],
+   [
+    781,
+    783
+   ],
+   [
+    782,
+    781
+   ]
+  ],
+  "in_exact_match_set": true
+ },
+ "7": {
+  "site_no": "05531500",
+  "width_m": 60,
+  "distance_to_flowline_m": 19.028719877792387,
+  "comid": "14785933",
+  "cells": [
+   [
+    3239,
+    1061
+   ],
+   [
+    3240,
+    1061
+   ]
+  ],
+  "in_exact_match_set": true
+ },
+ "14": {
+  "site_no": "05540130",
+  "width_m": 60,
+  "distance_to_flowline_m": 7.4840592097679846,
+  "comid": "14787003",
+  "cells": [
+   [
+    3685,
+    460
+   ],
+   [
+    3685,
+    461
+   ]
+  ],
+  "in_exact_match_set": true
+ },
+ "19": {
+  "site_no": "05528000",
+  "width_m": 90,
+  "distance_to_flowline_m": 34.62361801309399,
+  "comid": "14784503",
+  "cells": [
+   [
+    1321,
+    794
+   ],
+   [
+    1322,
+    794
+   ],
+   [
+    1323,
+    794
+   ]
+  ],
+  "in_exact_match_set": true
+ },
+ "20": {
+  "site_no": "05529000",
+  "width_m": 90,
+  "distance_to_flowline_m": 10.300060722676058,
+  "comid": "14784677",
+  "cells": [
+   [
+    2287,
+    1007
+   ],
+   [
+    2287,
+    1008
+   ],
+   [
+    2287,
+    1009
+   ]
+  ],
+  "in_exact_match_set": true
+ },
+ "25": {
+  "site_no": "05532500",
+  "width_m": 90,
+  "distance_to_flowline_m": 11.447477222588759,
+  "comid": "14786231",
+  "cells": [
+   [
+    3235,
+    1280
+   ],
+   [
+    3235,
+    1281
+   ],
+   [
+    3236,
+    1281
+   ]
+  ],
+  "in_exact_match_set": true
+ }
+}

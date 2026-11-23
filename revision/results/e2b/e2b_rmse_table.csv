@@ -1,0 +1,21 @@
+model,source,split,Russell,Gurnee,Des Plaines,Salt Creek,Riverside,DuPage
+full,SynxFlow,fit12-47_score48-95,0.065,0.214,0.567,0.09,0.247,0.508
+full,SynxFlow,fit48-95_score12-47,0.117,0.213,0.596,0.353,0.237,0.557
+full,SynxFlow,fit12-95_score48-95,0.033,0.099,0.256,0.073,0.171,0.252
+full,SynxFlow,fit12-95_score12-47,0.105,0.124,0.38,0.35,0.174,0.387
+full,sim_input,fit12-47_score48-95,0.014,0.22,0.577,0.074,0.29,0.522
+full,sim_input,fit48-95_score12-47,0.126,0.168,0.616,0.369,0.215,0.609
+full,sim_input,fit12-95_score48-95,0.032,0.101,0.265,0.099,0.204,0.272
+full,sim_input,fit12-95_score12-47,0.113,0.091,0.403,0.364,0.149,0.43
+full,usgs_input,fit12-47_score48-95,0.068,0.026,0.076,0.044,0.131,0.077
+full,usgs_input,fit48-95_score12-47,0.204,0.13,0.298,0.352,0.128,0.533
+full,usgs_input,fit12-95_score48-95,0.07,0.043,0.046,0.045,0.097,0.106
+full,usgs_input,fit12-95_score12-47,0.166,0.105,0.188,0.351,0.13,0.404
+four_gauges,sim_input,fit12-47_score48-95,0.03,0.253,0.575,0.064,0.279,0.555
+four_gauges,sim_input,fit48-95_score12-47,0.109,0.192,0.613,0.354,0.229,0.672
+four_gauges,sim_input,fit12-95_score48-95,0.017,0.135,0.264,0.076,0.188,0.299
+four_gauges,sim_input,fit12-95_score12-47,0.096,0.109,0.398,0.355,0.163,0.487
+four_gauges,usgs_input,fit12-47_score48-95,0.044,0.055,0.036,0.269,0.164,0.215
+four_gauges,usgs_input,fit48-95_score12-47,0.095,0.149,0.307,0.332,0.246,0.542
+four_gauges,usgs_input,fit12-95_score48-95,0.051,0.05,0.039,0.219,0.119,0.175
+four_gauges,usgs_input,fit12-95_score12-47,0.076,0.11,0.194,0.347,0.193,0.436

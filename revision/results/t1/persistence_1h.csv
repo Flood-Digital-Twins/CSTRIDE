@@ -1,0 +1,19 @@
+clock,model,source,station,name,nse,rmse_m,r,alpha
+CST,persistence_1h,usgs_obs_t-1,05527800,Russell,0.9962,0.0162,0.9991,1.0331
+CST,persistence_1h,usgs_obs_t-1,05528000,Gurnee,0.9917,0.0274,0.9984,1.0535
+CST,persistence_1h,usgs_obs_t-1,05529000,Des Plaines,0.9952,0.0454,0.999,1.0373
+CST,persistence_1h,usgs_obs_t-1,05531500,Salt Creek,0.9785,0.06,0.9934,1.0764
+CST,persistence_1h,usgs_obs_t-1,05532500,Riverside,0.9911,0.046,0.997,1.0415
+CST,persistence_1h,usgs_obs_t-1,05540130,DuPage,0.9779,0.0659,0.9914,1.056
+CDT,persistence_1h,usgs_obs_t-1,05527800,Russell,0.9959,0.0161,0.9991,1.0347
+CDT,persistence_1h,usgs_obs_t-1,05528000,Gurnee,0.9913,0.0266,0.9982,1.0536
+CDT,persistence_1h,usgs_obs_t-1,05529000,Des Plaines,0.9948,0.0454,0.999,1.0409
+CDT,persistence_1h,usgs_obs_t-1,05531500,Salt Creek,0.9747,0.0598,0.9925,1.0863
+CDT,persistence_1h,usgs_obs_t-1,05532500,Riverside,0.9902,0.0462,0.9968,1.0461
+CDT,persistence_1h,usgs_obs_t-1,05540130,DuPage,0.975,0.0659,0.9905,1.0636
+published,persistence_1h,usgs_obs_t-1,05527800,Russell,0.9945,0.0156,0.9986,1.0408
+published,persistence_1h,usgs_obs_t-1,05528000,Gurnee,0.9914,0.0213,0.9975,1.0446
+published,persistence_1h,usgs_obs_t-1,05529000,Des Plaines,0.992,0.0439,0.9986,1.0582
+published,persistence_1h,usgs_obs_t-1,05531500,Salt Creek,0.9814,0.0372,0.9913,1.0243
+published,persistence_1h,usgs_obs_t-1,05532500,Riverside,0.9867,0.0424,0.995,1.0451
+published,persistence_1h,usgs_obs_t-1,05540130,DuPage,0.9765,0.0543,0.9887,1.0195
