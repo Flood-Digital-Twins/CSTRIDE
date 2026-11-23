@@ -1,0 +1,5 @@
+model,fixed_rel_l2_107_pct,fixed_rel_l2_108_pct,fixed_rel_l2_109_pct,fixed_rel_l2_120_pct,fixed_four_event_rel_l2_pct,fixed_four_event_rmse_m,fixed_april_rel_l2_pct,fixed_april_rmse_m,april_csi,april_precision,april_recall,april_bias,event_mask_four_event_rel_l2_pct,event_mask_four_event_rmse_m,fp_outside_event_mask_four_events,fp_outside_event_mask_april,t7_mean_nse_sim,t7_mean_nse_usgs,t7_usgs_improves,t7_n,e6_mean_nse_sim,e6_mean_nse_usgs,e6_usgs_wins,e6_n
+C-STRIDE full,13.7017,15.8176,12.6600,9.5887,12.9420,0.0577,9.5887,0.0561,0.9326,0.9628,0.9674,1.0047,10.6327,0.0631,43638,5605,0.8008,0.9050,4,6,0.5774,0.5333,5,19
+C-STRIDE terrain,16.3609,21.1561,17.7930,10.6143,16.4811,0.0715,10.6143,0.0623,0.9242,0.9586,0.9626,1.0042,14.2302,0.0811,85499,7180,0.8071,0.8901,4,6,0.5936,0.5230,4,19
+C-STRIDE vanilla,23.5989,27.0339,23.4768,17.0281,22.7844,0.0969,17.0281,0.1006,0.8804,0.9378,0.9349,0.9969,18.1379,0.0995,615698,186680,0.8333,0.9085,4,6,0.6289,0.5976,6,19
+C-STRIDE forcing,21.5594,23.1023,20.7779,16.9675,20.6018,0.0887,16.9675,0.1003,0.8867,0.9423,0.9376,0.9951,15.7253,0.0879,540188,173072,0.7767,0.8931,4,6,0.5859,0.5461,4,19

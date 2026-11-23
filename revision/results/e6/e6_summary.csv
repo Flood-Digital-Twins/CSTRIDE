@@ -1,0 +1,53 @@
+cells,subset,source,n,mean_nse,median_nse,mean_r,mean_alpha,mean_rmse_m,mean_abs_half_rise_h,mean_abs_centroid_h
+xs,all,SynxFlow,21,0.46,0.675,0.845,0.758,0.267,2.857,5.527
+xs,all,C-STRIDE full (sim input),21,0.374,0.617,0.828,0.773,0.278,2.429,6.326
+xs,all,C-STRIDE full (USGS-CST input),21,0.379,0.486,0.778,0.686,0.295,2.619,6.176
+xs,all,C-STRIDE terrain (sim input),21,0.296,0.639,0.835,0.818,0.282,2.143,5.911
+xs,all,C-STRIDE terrain (USGS-CST input),21,0.372,0.558,0.777,0.798,0.306,3.571,6.96
+xs,all,C-STRIDE vanilla (sim input),21,0.336,0.683,0.855,0.787,0.276,3.476,5.346
+xs,all,C-STRIDE vanilla (USGS-CST input),21,0.405,0.662,0.808,0.769,0.286,2.952,5.537
+xs,all,C-STRIDE four_gauges (sim input),21,0.382,0.637,0.829,0.79,0.279,2.238,6.01
+xs,all,C-STRIDE four_gauges (USGS-CST input),21,0.387,0.511,0.76,0.635,0.298,3.238,6.218
+xs,all,COUNT usgs>sim full,21,6.0,-0.067,,,,,
+xs,all,COUNT usgs>sim terrain,21,6.0,-0.081,,,,,
+xs,all,COUNT usgs>sim vanilla,21,7.0,-0.078,,,,,
+xs,all,COUNT usgs>sim four_gauges,21,6.0,-0.091,,,,,
+xs,excl_canal_joliet,SynxFlow,19,0.606,0.687,0.875,0.662,0.263,2.421,5.221
+xs,excl_canal_joliet,C-STRIDE full (sim input),19,0.577,0.623,0.86,0.656,0.271,1.947,5.847
+xs,excl_canal_joliet,C-STRIDE full (USGS-CST input),19,0.533,0.585,0.794,0.56,0.292,2.158,6.505
+xs,excl_canal_joliet,C-STRIDE terrain (sim input),19,0.594,0.653,0.869,0.676,0.27,1.579,5.358
+xs,excl_canal_joliet,C-STRIDE terrain (USGS-CST input),19,0.523,0.562,0.791,0.683,0.304,3.0,7.416
+xs,excl_canal_joliet,C-STRIDE vanilla (sim input),19,0.629,0.696,0.892,0.645,0.264,2.895,4.698
+xs,excl_canal_joliet,C-STRIDE vanilla (USGS-CST input),19,0.598,0.672,0.83,0.645,0.28,2.579,5.472
+xs,excl_canal_joliet,C-STRIDE four_gauges (sim input),19,0.577,0.663,0.863,0.681,0.273,1.737,5.449
+xs,excl_canal_joliet,C-STRIDE four_gauges (USGS-CST input),19,0.494,0.522,0.771,0.523,0.299,2.842,6.464
+xs,excl_canal_joliet,COUNT usgs>sim full,19,5.0,-0.067,,,,,
+xs,excl_canal_joliet,COUNT usgs>sim terrain,19,4.0,-0.085,,,,,
+xs,excl_canal_joliet,COUNT usgs>sim vanilla,19,6.0,-0.081,,,,,
+xs,excl_canal_joliet,COUNT usgs>sim four_gauges,19,4.0,-0.124,,,,,
+nearest,all,SynxFlow,22,0.373,0.475,0.808,0.494,0.32,3.273,6.584
+nearest,all,C-STRIDE full (sim input),22,0.313,0.45,0.751,0.527,0.324,3.409,8.142
+nearest,all,C-STRIDE full (USGS-CST input),22,0.342,0.357,0.72,0.468,0.334,3.409,7.249
+nearest,all,C-STRIDE terrain (sim input),22,0.249,0.442,0.789,0.534,0.327,3.545,6.643
+nearest,all,C-STRIDE terrain (USGS-CST input),22,0.286,0.284,0.667,0.526,0.343,4.364,8.398
+nearest,all,C-STRIDE vanilla (sim input),22,0.31,0.491,0.716,0.57,0.324,4.227,7.888
+nearest,all,C-STRIDE vanilla (USGS-CST input),22,0.341,0.355,0.646,0.583,0.33,4.227,10.32
+nearest,all,C-STRIDE four_gauges (sim input),22,0.335,0.478,0.776,0.549,0.325,2.818,7.511
+nearest,all,C-STRIDE four_gauges (USGS-CST input),22,0.36,0.296,0.761,0.439,0.335,3.591,6.759
+nearest,all,COUNT usgs>sim full,22,6.0,-0.034,,,,,
+nearest,all,COUNT usgs>sim terrain,22,7.0,-0.072,,,,,
+nearest,all,COUNT usgs>sim vanilla,22,8.0,-0.029,,,,,
+nearest,all,COUNT usgs>sim four_gauges,22,8.0,-0.058,,,,,
+nearest,excl_canal_joliet,SynxFlow,20,0.468,0.495,0.813,0.443,0.326,3.5,6.262
+nearest,excl_canal_joliet,C-STRIDE full (sim input),20,0.455,0.486,0.794,0.457,0.328,3.65,6.544
+nearest,excl_canal_joliet,C-STRIDE full (USGS-CST input),20,0.421,0.4,0.75,0.399,0.342,3.7,6.194
+nearest,excl_canal_joliet,C-STRIDE terrain (sim input),20,0.466,0.459,0.827,0.445,0.328,3.4,6.06
+nearest,excl_canal_joliet,C-STRIDE terrain (USGS-CST input),20,0.384,0.375,0.685,0.454,0.351,4.5,8.56
+nearest,excl_canal_joliet,C-STRIDE vanilla (sim input),20,0.458,0.499,0.738,0.484,0.328,3.75,7.166
+nearest,excl_canal_joliet,C-STRIDE vanilla (USGS-CST input),20,0.417,0.373,0.652,0.505,0.338,4.05,9.978
+nearest,excl_canal_joliet,C-STRIDE four_gauges (sim input),20,0.466,0.503,0.807,0.49,0.33,2.4,6.587
+nearest,excl_canal_joliet,C-STRIDE four_gauges (USGS-CST input),20,0.41,0.356,0.773,0.385,0.345,3.9,6.191
+nearest,excl_canal_joliet,COUNT usgs>sim full,20,5.0,-0.045,,,,,
+nearest,excl_canal_joliet,COUNT usgs>sim terrain,20,6.0,-0.078,,,,,
+nearest,excl_canal_joliet,COUNT usgs>sim vanilla,20,7.0,-0.029,,,,,
+nearest,excl_canal_joliet,COUNT usgs>sim four_gauges,20,6.0,-0.073,,,,,

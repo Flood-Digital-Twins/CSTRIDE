@@ -1,0 +1,8 @@
+{
+ "epochs_completed": 180,
+ "configured_epochs": 700,
+ "stopped_early": true,
+ "best_epoch": 150,
+ "best_val_loss": 0.0001498942866765858,
+ "training_seconds": 53344.904114961624
+}

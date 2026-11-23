@@ -1,0 +1,7 @@
+model,cells,april2013_rel_l2_pct,april2013_rmse_m,four_event_rel_l2_pct,four_event_rmse_m,csi,precision,recall,bias,fp_outside_event_mask,fp_outside_share
+C-STRIDE full,fixed_grid,9.5887,0.0561,12.942,0.0577,0.9052,0.9489,0.9516,1.0029,43638.0,0.0151
+C-STRIDE full,event_mask,8.377,0.0589,10.6327,0.0631,0.9059,0.9496,0.9516,1.0021,,
+C-STRIDE terrain,fixed_grid,10.6143,0.0623,16.4811,0.0715,0.8746,0.935,0.9311,0.9958,85499.0,0.0234
+C-STRIDE terrain,event_mask,9.4944,0.0667,14.2302,0.0811,0.8758,0.9365,0.9311,0.9943,,
+CLDNet,fixed_grid,13.93,0.081,16.9369,0.0719,0.856,0.9233,0.9215,0.998,11537.0,0.0027
+CLDNet,event_mask,13.4599,0.093,16.1239,0.0867,0.8562,0.9235,0.9215,0.9978,,

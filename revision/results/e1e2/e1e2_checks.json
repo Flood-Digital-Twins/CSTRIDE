@@ -1,0 +1,60 @@
+{
+  "sim_depth_maxdiff": 0.0,
+  "elevation_maxdiff": 0.0,
+  "obs_wse_maxdiff": 0.0,
+  "shift_maxdiff": 0.0,
+  "input_depth_maxdiff": 0.0,
+  "full_sim_input_maxdiff_m": 3.063678741455078e-05,
+  "full_usgs_input_maxdiff_m": 0.0,
+  "full_sensors": [
+    "05527800",
+    "05528000",
+    "05529000",
+    "05531500",
+    "05532500",
+    "05540130"
+  ],
+  "terrain_sim_input_maxdiff_m": 1.990795135498047e-05,
+  "terrain_sensors": [
+    "05527800",
+    "05528000",
+    "05529000",
+    "05531500",
+    "05532500",
+    "05540130"
+  ],
+  "forcing_sim_input_maxdiff_m": 3.4332275390625e-05,
+  "forcing_sensors": [
+    "05527800",
+    "05528000",
+    "05529000",
+    "05531500",
+    "05532500",
+    "05540130"
+  ],
+  "vanilla_sim_input_maxdiff_m": 4.774704575538635e-05,
+  "vanilla_sensors": [
+    "05527800",
+    "05528000",
+    "05529000",
+    "05531500",
+    "05532500",
+    "05540130"
+  ],
+  "four_gauges_sim_input_maxdiff_m": 3.1113624572753906e-05,
+  "four_gauges_usgs_input_maxdiff_m": 0.0,
+  "four_gauges_sensors": [
+    "05527800",
+    "05528000",
+    "05529000",
+    "05532500"
+  ],
+  "synxflow_CST_frames0_95_nse": [
+    0.883,
+    0.932,
+    0.819,
+    0.543,
+    0.935,
+    0.428
+  ]
+}

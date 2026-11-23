@@ -1,0 +1,11 @@
+# Prepared arrays rebuilt by e5_prepare_data.py / e8_prepare_data.py (tens of GB)
+results/e5/data/Chicago/
+results/e8/data/Chicago/
+# CLDNet fields written by the CLDNet repository's predict_cldnet.py for E4 (about 770 MB each)
+results/e4/cldnet/
+# Inputs staged by f1_figures.py (derived simulation fields)
+results/figures/*/inputs/
+# Per-run training folders and resumable-training state
+results/*/training/
+*_state.pt
+*.tmp

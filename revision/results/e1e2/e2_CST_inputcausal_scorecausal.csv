@@ -1,0 +1,25 @@
+model,station,name,role,offset_m,SynxFlow_nse,SynxFlow_kge,SynxFlow_peak_timing_hours,sim_input_nse,sim_input_kge,sim_input_peak_timing_hours,usgs_input_nse,usgs_input_kge,usgs_input_peak_timing_hours
+full,05527800,Russell,input,-0.101,-0.051,0.961,0,-0.34,0.914,1,0.916,0.898,11
+full,05528000,Gurnee,input,-0.804,0.71,0.738,-31,0.667,0.737,-4,0.728,0.909,-9
+full,05529000,Des Plaines,input,-1.55,-0.053,0.6,-16,-0.079,0.573,-17,0.936,0.945,-1
+full,05531500,Salt Creek,input,-1.963,-7.135,0.648,-2,-8.134,0.644,0,-1.3,0.289,2
+full,05532500,Riverside,input,-0.259,0.875,0.876,-5,0.86,0.853,-6,0.424,0.61,8
+full,05540130,DuPage,input,-0.132,-6.273,0.581,-7,-6.112,0.591,-7,-0.326,0.824,6
+terrain,05527800,Russell,input,-0.101,,,,-0.284,0.918,1,0.929,0.773,1
+terrain,05528000,Gurnee,input,-0.804,,,,0.589,0.756,0,0.802,0.804,1
+terrain,05529000,Des Plaines,input,-1.55,,,,-0.053,0.596,-15,0.98,0.954,-4
+terrain,05531500,Salt Creek,input,-1.963,,,,-7.955,0.573,-1,-2.679,0.592,11
+terrain,05532500,Riverside,input,-0.259,,,,0.853,0.818,-5,0.687,0.626,4
+terrain,05540130,DuPage,input,-0.132,,,,-6.372,0.56,-5,-0.109,0.771,5
+vanilla,05527800,Russell,input,-0.101,,,,0.147,0.853,1,0.917,0.791,10
+vanilla,05528000,Gurnee,input,-0.804,,,,0.786,0.851,-3,0.88,0.889,-13
+vanilla,05529000,Des Plaines,input,-1.55,,,,-0.093,0.583,-13,0.99,0.974,-2
+vanilla,05531500,Salt Creek,input,-1.963,,,,-6.867,0.597,8,-3.432,0.539,16
+vanilla,05532500,Riverside,input,-0.259,,,,0.829,0.883,5,0.943,0.912,8
+vanilla,05540130,DuPage,input,-0.132,,,,-5.857,0.623,-2,-1.595,0.757,11
+four_gauges,05527800,Russell,input,-0.101,,,,-0.196,0.956,1,0.853,0.79,-1
+four_gauges,05528000,Gurnee,input,-0.804,,,,0.584,0.667,-26,0.73,0.824,5
+four_gauges,05529000,Des Plaines,input,-1.55,,,,-0.071,0.581,-17,0.962,0.95,0
+four_gauges,05531500,Salt Creek,held_out,-1.963,,,,-7.351,0.734,1,-6.029,0.789,6
+four_gauges,05532500,Riverside,input,-0.259,,,,0.866,0.834,-2,0.937,0.835,8
+four_gauges,05540130,DuPage,held_out,-0.132,,,,-6.173,0.603,-5,-1.7,0.809,-4
