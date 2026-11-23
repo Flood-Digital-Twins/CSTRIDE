@@ -1,4 +1,4 @@
-# Revision checks (Journal of Hydrology revision, November 2026)
+# Revision checks (November 2026)
 
 This folder holds the scripts, result tables and retrained models behind the results added or changed in the revision. Outside `revision/` only the top-level `README.md` and `results/README.md` gained pointers here: the released models, configurations, data and result files are as submitted, so the submission numbers still reproduce with the released scripts.
 
